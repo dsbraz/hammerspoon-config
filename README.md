@@ -25,6 +25,7 @@ matching WhichSpace's own `ctrl+alt+←/→`.
 | Key | Does |
 |---|---|
 | `hyper` + `b` `e` `g` `i` `t` | Focus Chrome, Zed, GitButler, Rider, Ghostty |
+| `hyper` + `space` / `return` | Open a new Chrome or Ghostty window |
 | `hyper` + `r` | Retile the active Stage Manager group |
 | `hyper` + `w` | Turn automatic tiling on or off |
 | `ctrl+alt` + `1`–`9` | Move the front window to that Desktop and follow it |
@@ -35,7 +36,7 @@ matching WhichSpace's own `ctrl+alt+←/→`.
 
 | Spoon | Does |
 |---|---|
-| [AppLauncher][applauncher] | Launches or focuses applications by semantic role, so a key stays put when the application for that job changes |
+| [AppLauncher][applauncher] | Launches or focuses applications by semantic role, so a key stays put when the application for that job changes, and opens a new window for a role |
 | [StageNativeTile][stagenativetile] | Applies macOS native tiling to the active Stage Manager group |
 | [WhichSpaceKeys][whichspacekeys] | Reaches a Desktop by number, and adds and removes Desktops, through [WhichSpace][whichspace] |
 

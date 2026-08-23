@@ -35,6 +35,11 @@ spoon.AppLauncher:bindHotkeys({
   terminal = { hyper, "t" },
 })
 
+spoon.AppLauncher:bindNewWindow({
+  browser = { hyper, "space" },
+  terminal = { hyper, "return" },
+})
+
 hs.loadSpoon("WhichSpaceKeys")
 
 spoon.WhichSpaceKeys:bindDesktops(desktop)
