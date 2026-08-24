@@ -2,7 +2,7 @@
 
 My [Hammerspoon][hammerspoon] configuration: `init.lua`, and nothing else.
 
-It loads two Spoons and decides which keys reach them. The Spoons themselves
+It loads three Spoons and decides which keys reach them. The Spoons themselves
 live in their own repositories, so they are not tracked here — `Spoons/` is
 ignored.
 
@@ -26,6 +26,7 @@ matching WhichSpace's own `ctrl+alt+←/→`.
 |---|---|
 | `hyper` + `b` `e` `g` `i` `t` | Focus Chrome, Zed, GitButler, Rider, Ghostty |
 | `hyper` + `space` / `return` | Open a new Chrome or Ghostty window |
+| `hyper` + `r` | Tile the active Stage Manager group |
 | `ctrl+alt` + `1`–`9` | Move the front window to that Desktop and follow it |
 | `ctrl+alt` + `=` | Add a Desktop and switch to it |
 | `ctrl+alt` + `-` | Remove the current Desktop |
@@ -35,6 +36,7 @@ matching WhichSpace's own `ctrl+alt+←/→`.
 | Spoon | Does |
 |---|---|
 | [AppLauncher][applauncher] | Launches or focuses applications by semantic role, so a key stays put when the application for that job changes, and opens a new window for a role |
+| [StageNativeTile][stagenativetile] | Tiles the active Stage Manager group, on a keypress |
 | [WhichSpaceKeys][whichspacekeys] | Reaches a Desktop by number, and adds and removes Desktops, through [WhichSpace][whichspace] |
 
 ## Installing
@@ -43,6 +45,7 @@ matching WhichSpace's own `ctrl+alt+←/→`.
 git clone https://github.com/dsbraz/hammerspoon-config.git ~/.hammerspoon
 cd ~/.hammerspoon/Spoons
 git clone https://github.com/dsbraz/AppLauncher.spoon.git
+git clone https://github.com/dsbraz/StageNativeTile.spoon.git
 git clone https://github.com/dsbraz/WhichSpaceKeys.spoon.git
 ```
 
@@ -55,5 +58,6 @@ to control WhichSpace.
 
 [applauncher]: https://github.com/dsbraz/AppLauncher.spoon
 [hammerspoon]: https://www.hammerspoon.org
+[stagenativetile]: https://github.com/dsbraz/StageNativeTile.spoon
 [whichspace]: https://github.com/gechr/WhichSpace
 [whichspacekeys]: https://github.com/dsbraz/WhichSpaceKeys.spoon

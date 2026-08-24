@@ -5,6 +5,17 @@ hs.autoLaunch(true)
 local hyper = { "cmd", "ctrl", "alt", "shift" }
 local desktop = { "ctrl", "alt" }
 
+hs.loadSpoon("StageNativeTile")
+
+spoon.StageNativeTile.excludedBundleIDs = {
+  ["com.apple.finder"] = true,
+  ["com.apple.systempreferences"] = true,
+}
+
+spoon.StageNativeTile:bindHotkeys({
+  retile = { hyper, "r" },
+}):start()
+
 hs.loadSpoon("AppLauncher")
 
 spoon.AppLauncher.apps = {
