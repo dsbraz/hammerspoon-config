@@ -14,11 +14,13 @@ throughout, so a layer moves in a single edit:
 ```lua
 local hyper   = { "cmd", "ctrl", "alt", "shift" }
 local desktop = { "ctrl", "alt" }
+local tile    = { "fn", "ctrl" }
 ```
 
 `hyper` is the four-modifier combination — nothing else on macOS claims it, so
 it is safe for application and window shortcuts. `desktop` is the Space layer,
-matching WhichSpace's own `ctrl+alt+←/→`.
+matching WhichSpace's own `ctrl+alt+←/→`. `tile` is the native tiling family
+(`Fn-Control-F` fill, `Fn-Control-C` center, `Fn-Control-R` restore).
 
 ## Keys
 
@@ -26,7 +28,7 @@ matching WhichSpace's own `ctrl+alt+←/→`.
 |---|---|
 | `hyper` + `b` `e` `g` `i` `t` | Focus Chrome, Zed, GitButler, Rider, Ghostty |
 | `hyper` + `space` / `return` | Open a new Chrome or Ghostty window |
-| `hyper` + `r` | Tile the active Stage Manager group |
+| `fn+ctrl` + `t` | Tile the active Stage Manager group |
 | `ctrl+alt` + `1`–`9` | Move the front window to that Desktop and follow it |
 | `ctrl+alt` + `=` | Add a Desktop and switch to it |
 | `ctrl+alt` + `-` | Remove the current Desktop |

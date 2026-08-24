@@ -4,6 +4,7 @@ hs.autoLaunch(true)
 
 local hyper = { "cmd", "ctrl", "alt", "shift" }
 local desktop = { "ctrl", "alt" }
+local tile = { "fn", "ctrl" }
 
 hs.loadSpoon("StageNativeTile")
 
@@ -13,7 +14,7 @@ spoon.StageNativeTile.excludedBundleIDs = {
 }
 
 spoon.StageNativeTile:bindHotkeys({
-  retile = { hyper, "r" },
+  retile = { tile, "t" },
 }):start()
 
 hs.loadSpoon("AppLauncher")
