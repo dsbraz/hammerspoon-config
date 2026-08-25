@@ -12,13 +12,12 @@ Everything is one file. It names the two modifier layers once and uses them
 throughout, so a layer moves in a single edit:
 
 ```lua
-local hyper   = { "cmd", "ctrl", "alt", "shift" }
+local hyper   = { "cmd", "ctrl", "alt" }
 local desktop = { "ctrl", "alt" }
 ```
 
-`hyper` is the four-modifier combination — nothing else on macOS claims it, so
-it is safe for application and window shortcuts. `desktop` is the Space layer,
-matching WhichSpace's own `ctrl+alt+←/→`.
+`hyper` is the three-modifier combination emitted by Hyperkey. `desktop` is the
+Space layer, matching WhichSpace's own `ctrl+alt+←/→`.
 
 ## Keys
 

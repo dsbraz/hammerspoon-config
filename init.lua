@@ -2,7 +2,7 @@ require("hs.ipc")
 
 hs.autoLaunch(true)
 
-local hyper = { "cmd", "ctrl", "alt", "shift" }
+local hyper = { "cmd", "ctrl", "alt" }
 local desktop = { "ctrl", "alt" }
 
 hs.loadSpoon("AppLauncher")
