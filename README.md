@@ -24,7 +24,7 @@ Space layer, matching WhichSpace's own `ctrl+alt+←/→`.
 | Key | Does |
 |---|---|
 | `hyper` + `b` `e` `g` `i` `t` | Focus Chrome, Zed, GitButler, Rider, Ghostty |
-| `hyper` + `space` / `return` | Open a new Chrome or Ghostty window |
+| `hyper` + `space` / `return` / `escape` | Open a new Chrome, Ghostty, or Finder window, joining the current Stage Manager group when enabled |
 | `ctrl+alt` + `1`–`9` | Move the front window to that Desktop and follow it |
 | `ctrl+alt` + `=` | Add a Desktop and switch to it |
 | `ctrl+alt` + `-` | Remove the current Desktop |
