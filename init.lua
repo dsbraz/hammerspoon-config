@@ -42,3 +42,8 @@ spoon.DesktopKeys:bindHotkeys({
   createDesktop = { hyper, "=" },
   removeDesktop = { hyper, "-" },
 })
+
+hs.loadSpoon("FocusFollowsMouse")
+
+spoon.FocusFollowsMouse.delay = 0.15
+spoon.FocusFollowsMouse:start()

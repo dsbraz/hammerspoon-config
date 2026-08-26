@@ -2,7 +2,7 @@
 
 My [Hammerspoon][hammerspoon] configuration: `init.lua`, and nothing else.
 
-It loads two Spoons and decides which keys reach them. The Spoons themselves
+It loads three Spoons and decides which keys reach them. The Spoons themselves
 live in their own repositories, so they are not tracked here — `Spoons/` is
 ignored.
 
@@ -32,6 +32,7 @@ local hyper = { "cmd", "ctrl", "alt" }
 |---|---|
 | [AppLauncher][applauncher] | Launches or focuses applications by semantic role, so a key stays put when the application for that job changes, and opens a new window for a role |
 | [DesktopKeys][desktopkeys] | Adds and removes macOS Desktops; [WhichSpace][whichspace] is only its internal switch backend |
+| [FocusFollowsMouse][focusfollowsmouse] | Gives keyboard focus to the standard visible window under the pointer after a short dwell |
 
 ## Installing
 
@@ -40,6 +41,7 @@ git clone https://github.com/dsbraz/hammerspoon-config.git ~/.hammerspoon
 cd ~/.hammerspoon/Spoons
 git clone https://github.com/dsbraz/AppLauncher.spoon.git
 git clone https://github.com/dsbraz/DesktopKeys.spoon.git
+git clone https://github.com/dsbraz/FocusFollowsMouse.spoon.git
 ```
 
 DesktopKeys uses [WhichSpace][whichspace] internally, so WhichSpace has to be
@@ -53,3 +55,4 @@ to control WhichSpace.
 [hammerspoon]: https://www.hammerspoon.org
 [whichspace]: https://github.com/gechr/WhichSpace
 [desktopkeys]: https://github.com/dsbraz/DesktopKeys.spoon
+[focusfollowsmouse]: https://github.com/dsbraz/FocusFollowsMouse.spoon
