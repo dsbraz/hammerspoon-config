@@ -8,33 +8,30 @@ ignored.
 
 ## Layout
 
-Everything is one file. It names the two modifier layers once and uses them
-throughout, so a layer moves in a single edit:
+Everything is one file. It names the modifier layer once and uses it
+throughout, so the layer moves in a single edit:
 
 ```lua
-local hyper   = { "cmd", "ctrl", "alt" }
-local desktop = { "ctrl", "alt" }
+local hyper = { "cmd", "ctrl", "alt" }
 ```
 
-`hyper` is the three-modifier combination emitted by Hyperkey. `desktop` is the
-Space layer, matching WhichSpace's own `ctrl+alt+←/→`.
+`hyper` is the three-modifier combination emitted by Hyperkey.
 
 ## Keys
 
 | Key | Does |
 |---|---|
-| `hyper` + `b` `e` `g` `i` `t` | Focus Chrome, Zed, GitButler, Rider, Ghostty |
+| `hyper` + `b` `e` `g` `i` `t` `x` | Focus Chrome, Zed, GitButler, Rider, Ghostty, or the X web app |
 | `hyper` + `space` / `return` / `escape` | Open a new Chrome, Ghostty, or Finder window, joining the current Stage Manager group when enabled |
-| `ctrl+alt` + `1`–`9` | Move the front window to that Desktop and follow it |
-| `ctrl+alt` + `=` | Add a Desktop and switch to it |
-| `ctrl+alt` + `-` | Remove the current Desktop |
+| `hyper` + `=` (the `+/=` key) | Add a Desktop and switch to it |
+| `hyper` + `-` | Remove the current Desktop |
 
 ## Spoons
 
 | Spoon | Does |
 |---|---|
 | [AppLauncher][applauncher] | Launches or focuses applications by semantic role, so a key stays put when the application for that job changes, and opens a new window for a role |
-| [WhichSpaceKeys][whichspacekeys] | Reaches a Desktop by number, and adds and removes Desktops, through [WhichSpace][whichspace] |
+| [DesktopKeys][desktopkeys] | Adds and removes macOS Desktops; [WhichSpace][whichspace] is only its internal switch backend |
 
 ## Installing
 
@@ -42,11 +39,11 @@ Space layer, matching WhichSpace's own `ctrl+alt+←/→`.
 git clone https://github.com/dsbraz/hammerspoon-config.git ~/.hammerspoon
 cd ~/.hammerspoon/Spoons
 git clone https://github.com/dsbraz/AppLauncher.spoon.git
-git clone https://github.com/dsbraz/WhichSpaceKeys.spoon.git
+git clone https://github.com/dsbraz/DesktopKeys.spoon.git
 ```
 
-WhichSpaceKeys drives [WhichSpace][whichspace], which has to be installed and
-running. Each Spoon's README lists what it needs; between them that is
+DesktopKeys uses [WhichSpace][whichspace] internally, so WhichSpace has to be
+installed and running. Each Spoon's README lists what it needs; between them that is
 Accessibility for Hammerspoon and for WhichSpace, and Automation for Hammerspoon
 to control WhichSpace.
 
@@ -55,4 +52,4 @@ to control WhichSpace.
 [applauncher]: https://github.com/dsbraz/AppLauncher.spoon
 [hammerspoon]: https://www.hammerspoon.org
 [whichspace]: https://github.com/gechr/WhichSpace
-[whichspacekeys]: https://github.com/dsbraz/WhichSpaceKeys.spoon
+[desktopkeys]: https://github.com/dsbraz/DesktopKeys.spoon

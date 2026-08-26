@@ -3,7 +3,6 @@ require("hs.ipc")
 hs.autoLaunch(true)
 
 local hyper = { "cmd", "ctrl", "alt" }
-local desktop = { "ctrl", "alt" }
 
 hs.loadSpoon("AppLauncher")
 
@@ -14,6 +13,7 @@ spoon.AppLauncher.apps = {
   git = "com.gitbutler.app",
   ide = "com.jetbrains.rider",
   terminal = "com.mitchellh.ghostty",
+  x = "com.google.Chrome.app.lodlkdfmihgonocnmddehnfgiljnadcf",
 }
 
 spoon.AppLauncher.newWindowMenuItems = {
@@ -27,6 +27,7 @@ spoon.AppLauncher:bindHotkeys({
   git = { hyper, "g" },
   ide = { hyper, "i" },
   terminal = { hyper, "t" },
+  x = { hyper, "x" },
 })
 
 spoon.AppLauncher:bindNewWindow({
@@ -35,11 +36,9 @@ spoon.AppLauncher:bindNewWindow({
   terminal = { hyper, "return" },
 })
 
-hs.loadSpoon("WhichSpaceKeys")
+hs.loadSpoon("DesktopKeys")
 
-spoon.WhichSpaceKeys:bindDesktops(desktop)
-
-spoon.WhichSpaceKeys:bindHotkeys({
-  createDesktop = { desktop, "=" },
-  removeDesktop = { desktop, "-" },
+spoon.DesktopKeys:bindHotkeys({
+  createDesktop = { hyper, "=" },
+  removeDesktop = { hyper, "-" },
 })
