@@ -12,6 +12,7 @@ spoon.AppLauncher.apps = {
   files = "com.apple.finder",
   git = "com.gitbutler.app",
   ide = "com.jetbrains.rider",
+  linear = "com.linear",
   terminal = "com.mitchellh.ghostty",
   x = "com.google.Chrome.app.lodlkdfmihgonocnmddehnfgiljnadcf",
 }
@@ -26,6 +27,7 @@ spoon.AppLauncher:bindHotkeys({
   editor = { hyper, "e" },
   git = { hyper, "g" },
   ide = { hyper, "i" },
+  linear = { hyper, "l" },
   terminal = { hyper, "t" },
   x = { hyper, "x" },
 })
