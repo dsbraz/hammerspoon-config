@@ -7,7 +7,7 @@ local hyper = { "cmd", "ctrl", "alt" }
 hs.loadSpoon("AppLauncher")
 
 spoon.AppLauncher.apps = {
-  browser = "com.google.Chrome",
+  browser = "com.apple.Safari",
   editor = "dev.zed.Zed",
   files = "com.apple.finder",
   git = "com.gitbutler.app",
