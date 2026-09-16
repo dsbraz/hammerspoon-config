@@ -7,7 +7,7 @@ local hyper = { "cmd", "ctrl", "alt" }
 hs.loadSpoon("AppLauncher")
 
 spoon.AppLauncher.apps = {
-  browser = "com.apple.Safari",
+  chrome = "com.google.Chrome",
   editor = "dev.zed.Zed",
   files = "com.apple.finder",
   git = "com.gitbutler.app",
@@ -23,7 +23,7 @@ spoon.AppLauncher.newWindowMenuItems = {
 spoon.AppLauncher.joinNewWindowsToCurrentStage = true
 
 spoon.AppLauncher:bindHotkeys({
-  browser = { hyper, "b" },
+  chrome = { hyper, "b" },
   editor = { hyper, "e" },
   git = { hyper, "g" },
   ide = { hyper, "i" },
@@ -33,16 +33,9 @@ spoon.AppLauncher:bindHotkeys({
 })
 
 spoon.AppLauncher:bindNewWindow({
-  browser = { hyper, "space" },
+  chrome = { hyper, "space" },
   files = { hyper, "escape" },
   terminal = { hyper, "return" },
-})
-
-hs.loadSpoon("DesktopKeys")
-
-spoon.DesktopKeys:bindHotkeys({
-  createDesktop = { hyper, "=" },
-  removeDesktop = { hyper, "-" },
 })
 
 hs.loadSpoon("FocusFollowsMouse")
