@@ -20,7 +20,6 @@ spoon.AppLauncher.apps = {
 spoon.AppLauncher.newWindowMenuItems = {
   files = { "File", "New Finder Window" },
 }
-spoon.AppLauncher.joinNewWindowsToCurrentStage = true
 
 spoon.AppLauncher:bindHotkeys({
   chrome = { hyper, "b" },
