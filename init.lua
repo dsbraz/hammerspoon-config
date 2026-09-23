@@ -8,7 +8,7 @@ hs.loadSpoon("AppLauncher")
 
 spoon.AppLauncher.apps = {
   chrome = "com.google.Chrome",
-  editor = "dev.zed.Zed",
+  editor = "com.sublimetext.4",
   files = "com.apple.finder",
   git = "com.google.Chrome.app.mjoklplbddabcmpepnokjaffbmgbkkgg",
   ide = "com.jetbrains.rider",
@@ -31,11 +31,7 @@ spoon.AppLauncher:bindHotkeys({
   x = { hyper, "x" },
 })
 
-spoon.AppLauncher:bindNewWindow({
-  chrome = { hyper, "space" },
-  files = { hyper, "escape" },
-  terminal = { hyper, "return" },
-})
+spoon.AppLauncher:bindNewWindow()
 
 hs.loadSpoon("WindowCycle")
 
