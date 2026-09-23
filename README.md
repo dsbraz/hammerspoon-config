@@ -1,10 +1,10 @@
 # hammerspoon-config
 
-My [Hammerspoon][hammerspoon] configuration: `init.lua`, and nothing else.
+My [Hammerspoon][hammerspoon] configuration.
 
-It loads three Spoons and decides which keys reach them. The Spoons themselves
-live in their own repositories, so they are not tracked here — `Spoons/` is
-ignored.
+It loads two Spoons and decides which keys reach them. AppLauncher and
+WindowCycle live in their own repositories and are ignored here.
+Amethyst handles focus follows mouse. JankyBorders handles window borders.
 
 ## Layout
 
@@ -35,8 +35,13 @@ continues from that monitor.
 | Spoon | Does |
 |---|---|
 | [AppLauncher][applauncher] | Launches or focuses applications by semantic role, so a key stays put when the application for that job changes, and opens a new window for a role |
-| [FocusFollowsMouse][focusfollowsmouse] | Gives keyboard focus to the standard visible window under the pointer after a short dwell |
 | [WindowCycle][windowcycle] | Cycles focus around the current monitor or between monitors in their active Spaces |
+
+JankyBorders is installed with `brew install FelixKratz/formulae/borders` and
+started at login with `brew services start felixkratz/formulae/borders`.
+Its configuration is in `~/.config/borders/bordersrc`: rounded white 5-point
+border, transparent inactive borders, Retina rendering, and `ax_focus=off`.
+The white color is fixed rather than following the macOS appearance.
 
 ## Installing
 
@@ -44,7 +49,6 @@ continues from that monitor.
 git clone https://github.com/dsbraz/hammerspoon-config.git ~/.hammerspoon
 cd ~/.hammerspoon/Spoons
 git clone https://github.com/dsbraz/AppLauncher.spoon.git
-git clone https://github.com/dsbraz/FocusFollowsMouse.spoon.git
 git clone https://github.com/dsbraz/WindowCycle.spoon.git
 ```
 
@@ -54,5 +58,4 @@ All Spoons require Accessibility permission for Hammerspoon.
 
 [applauncher]: https://github.com/dsbraz/AppLauncher.spoon
 [hammerspoon]: https://www.hammerspoon.org
-[focusfollowsmouse]: https://github.com/dsbraz/FocusFollowsMouse.spoon
 [windowcycle]: https://github.com/dsbraz/WindowCycle.spoon

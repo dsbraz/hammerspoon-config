@@ -37,11 +37,6 @@ spoon.AppLauncher:bindNewWindow({
   terminal = { hyper, "return" },
 })
 
-hs.loadSpoon("FocusFollowsMouse")
-
-spoon.FocusFollowsMouse.delay = 0.30
-spoon.FocusFollowsMouse:start()
-
 hs.loadSpoon("WindowCycle")
 
 spoon.WindowCycle:bindHotkeys({
