@@ -15,6 +15,7 @@ spoon.AppLauncher.apps = {
   linear = "com.linear",
   terminal = "com.mitchellh.ghostty",
   x = "com.google.Chrome.app.lodlkdfmihgonocnmddehnfgiljnadcf",
+  youtube = "com.google.Chrome.app.agimnkijcaahngcdmfeangaknmldooml",
 }
 
 spoon.AppLauncher.newWindowMenuItems = {
@@ -29,6 +30,7 @@ spoon.AppLauncher:bindHotkeys({
   linear = { hyper, "l" },
   terminal = { hyper, "t" },
   x = { hyper, "x" },
+  youtube = { hyper, "y" },
 })
 
 spoon.AppLauncher:bindNewWindow()
