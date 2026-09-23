@@ -4,7 +4,7 @@ My [Hammerspoon][hammerspoon] configuration.
 
 It loads two Spoons and decides which keys reach them. AppLauncher and
 WindowCycle live in their own repositories and are ignored here.
-Amethyst handles focus follows mouse. JankyBorders handles window borders.
+AutoRaise handles focus follows mouse. JankyBorders handles window borders.
 
 ## Layout
 
@@ -42,6 +42,12 @@ started at login with `brew services start felixkratz/formulae/borders`.
 Its configuration is in `~/.config/borders/bordersrc`: rounded white 5-point
 border, transparent inactive borders, Retina rendering, and `ax_focus=off`.
 The white color is fixed rather than following the macOS appearance.
+
+AutoRaise is installed with `brew install --cask dimentium/autoraise/autoraiseapp`
+and opens at login. It polls the pointer every 250 ms and raises and focuses
+windows once the pointer is detected as stopped, with no additional delay
+(0 ms). Pointer warping is disabled. Amethyst's focus-follows-mouse setting
+remains disabled to avoid competing focus changes.
 
 ## Installing
 
