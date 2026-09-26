@@ -22,7 +22,7 @@ local hyper = { "cmd", "ctrl", "alt" }
 | Key | Does |
 |---|---|
 | `hyper` + `b` `e` `g` `i` `l` `t` `x` | Focus Chrome, Zed, GitButler, Rider, Linear, Ghostty, or the X web app |
-| `hyper` + `space` / `return` / `escape` | Open a new Chrome, Ghostty, or Finder window |
+| `hyper` + `return` / `shift` + `return` | Open a new Ghostty / Chrome window |
 | Command + grave accent / Command + Shift + grave accent | Cycle window focus clockwise / counterclockwise in the current Space and monitor |
 | Command + Option + grave accent / Command + Option + Shift + grave accent | Focus the next / previous monitor, ordered left to right with wraparound, and move the pointer there |
 
