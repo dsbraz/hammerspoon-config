@@ -35,13 +35,5 @@ spoon.AppLauncher:bindHotkeys({
 
 spoon.AppLauncher:bindNewWindow()
 
-hs.loadSpoon("WindowCycle")
-spoon.WindowCycle:bindHotkeys({
-  clockwise = { { "cmd" }, "`" },
-  counterclockwise = { { "cmd", "shift" }, "`" },
-  nextMonitor = { { "cmd", "alt" }, "`" },
-  previousMonitor = { { "cmd", "alt", "shift" }, "`" },
-})
-
 hs.loadSpoon("SpaceMover")
 spoon.SpaceMover:bindHotkeys()
