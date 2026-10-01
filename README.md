@@ -41,8 +41,7 @@ The white color is fixed rather than following the macOS appearance.
 AutoRaise is installed with `brew install --cask dimentium/autoraise/autoraiseapp`
 and opens at login. It polls the pointer every 250 ms and raises and focuses
 windows once the pointer is detected as stopped, with no additional delay
-(0 ms). Pointer warping is disabled. Amethyst's focus-follows-mouse setting
-remains disabled to avoid competing focus changes.
+(0 ms). Pointer warping is disabled.
 
 ## Installing
 
