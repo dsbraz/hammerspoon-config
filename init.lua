@@ -7,6 +7,7 @@ local hyper = { "cmd", "ctrl", "alt" }
 hs.loadSpoon("AppLauncher")
 
 spoon.AppLauncher.apps = {
+  calendar = "com.apple.iCal",
   chrome = "com.google.Chrome",
   editor = "com.sublimetext.4",
   files = "com.apple.finder",
@@ -23,6 +24,7 @@ spoon.AppLauncher.newWindowMenuItems = {
 }
 
 spoon.AppLauncher:bindHotkeys({
+  calendar = { hyper, "c" },
   chrome = { hyper, "b" },
   editor = { hyper, "e" },
   git = { hyper, "g" },

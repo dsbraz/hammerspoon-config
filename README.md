@@ -22,6 +22,7 @@ local hyper = { "cmd", "ctrl", "alt" }
 | Key | Does |
 |---|---|
 | `hyper` + `1`…`9` | Send the focused window to that desktop on its monitor, without following it |
+| `hyper` + `c` | Launch or focus Calendar |
 | `hyper` + `b` `e` `g` `i` `l` `t` `x` | Focus Chrome, Zed, GitButler, Rider, Linear, Ghostty, or the X web app |
 | `hyper` + `return` / `shift` + `return` | Open a new Ghostty / Chrome window |
 
