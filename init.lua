@@ -36,6 +36,3 @@ spoon.AppLauncher:bindHotkeys({
 })
 
 spoon.AppLauncher:bindNewWindow()
-
-hs.loadSpoon("SpaceMover")
-spoon.SpaceMover:bindHotkeys()

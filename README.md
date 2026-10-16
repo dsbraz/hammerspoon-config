@@ -2,8 +2,8 @@
 
 My [Hammerspoon][hammerspoon] configuration.
 
-It loads two Spoons and decides which keys reach them. AppLauncher
-and SpaceMover live in their own repositories and are ignored here.
+It loads AppLauncher and decides which keys reach it. AppLauncher
+lives in its own repository and is ignored here.
 JankyBorders handles window borders.
 
 ## Layout
@@ -21,7 +21,6 @@ local hyper = { "cmd", "ctrl", "alt" }
 
 | Key | Does |
 |---|---|
-| `hyper` + `1`…`9` | Send the focused window to that desktop on its monitor, without following it |
 | `hyper` + `c` | Launch or focus Calendar |
 | `hyper` + `b` `e` `g` `i` `l` `t` `x` | Focus Chrome, Zed, GitButler, Rider, Linear, Ghostty, or the X web app |
 | `hyper` + `return` / `shift` + `return` | Open a new Ghostty / Chrome window |
@@ -31,7 +30,6 @@ local hyper = { "cmd", "ctrl", "alt" }
 | Spoon | Does |
 |---|---|
 | [AppLauncher][applauncher] | Launches or focuses applications by semantic role, so a key stays put when the application for that job changes, and opens a new window for a role |
-| [SpaceMover][spacemover] | Sends the focused window to a numbered native desktop on its monitor |
 
 JankyBorders is installed with `brew install FelixKratz/formulae/borders` and
 started at login with `brew services start felixkratz/formulae/borders`.
@@ -45,8 +43,6 @@ The white color is fixed rather than following the macOS appearance.
 git clone https://github.com/dsbraz/hammerspoon-config.git ~/.hammerspoon
 cd ~/.hammerspoon/Spoons
 git clone https://github.com/dsbraz/AppLauncher.spoon.git
-git clone https://github.com/dsbraz/SpaceMover.spoon.git
-make -C SpaceMover.spoon
 ```
 
 All Spoons require Accessibility permission for Hammerspoon.
@@ -55,4 +51,3 @@ All Spoons require Accessibility permission for Hammerspoon.
 
 [applauncher]: https://github.com/dsbraz/AppLauncher.spoon
 [hammerspoon]: https://www.hammerspoon.org
-[spacemover]: https://github.com/dsbraz/SpaceMover.spoon
