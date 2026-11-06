@@ -22,8 +22,7 @@ local hyper = { "cmd", "ctrl", "alt" }
 | Key | Does |
 |---|---|
 | `hyper` + `c` | Launch or focus Calendar |
-| `hyper` + `b` `e` `g` `i` `l` `t` `x` | Focus Chrome, Zed, GitButler, Rider, Linear, Rex, or the X web app |
-| `hyper` + `return` / `shift` + `return` | Open a new Ghostty / Chrome window |
+| `hyper` + `b` `e` `g` `l` `t` `x` `y` | Focus Chrome, Sublime Text, the Git web app, Linear, Rex, the X web app, or YouTube |
 
 ## Spoons
 

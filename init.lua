@@ -29,11 +29,10 @@ spoon.AppLauncher:bindHotkeys({
   chrome = { hyper, "b" },
   editor = { hyper, "e" },
   git = { hyper, "g" },
-  ide = { hyper, "i" },
   linear = { hyper, "l" },
   rex = { hyper, "t" },
   x = { hyper, "x" },
   youtube = { hyper, "y" },
 })
 
-spoon.AppLauncher:bindNewWindow()
+spoon.AppLauncher:bindNewWindow({})
