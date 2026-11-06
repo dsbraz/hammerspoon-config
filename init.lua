@@ -14,6 +14,7 @@ spoon.AppLauncher.apps = {
   git = "com.google.Chrome.app.mjoklplbddabcmpepnokjaffbmgbkkgg",
   ide = "com.jetbrains.rider",
   linear = "com.linear",
+  rex = "com.superlogical.rex",
   terminal = "com.mitchellh.ghostty",
   x = "com.google.Chrome.app.lodlkdfmihgonocnmddehnfgiljnadcf",
   youtube = "com.google.Chrome.app.agimnkijcaahngcdmfeangaknmldooml",
@@ -30,7 +31,7 @@ spoon.AppLauncher:bindHotkeys({
   git = { hyper, "g" },
   ide = { hyper, "i" },
   linear = { hyper, "l" },
-  terminal = { hyper, "t" },
+  rex = { hyper, "t" },
   x = { hyper, "x" },
   youtube = { hyper, "y" },
 })
